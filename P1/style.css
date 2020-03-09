@@ -1,0 +1,54 @@
+/* Estilo */
+* {
+  box-sizing: border-box;
+}
+
+body {
+   background-image: linear-gradient(to right, rgb(184, 184, 184), rgba(55, 55, 55, 0.85));
+   background-size: cover;
+}
+
+.titulo{
+   text-shadow: 0 0 5px rgb(221, 58, 97);
+   width: 500px;
+   padding: auto;
+   padding-bottom: 25px;
+   margin: auto;
+
+   color: rgb(0,0,0);
+}
+
+.leftcolumn {
+   border-radius: 50px;
+   border: 2px solid #73AD21;
+   padding: 20px;
+   width: 400px;
+   height: auto;
+
+}
+.personalinfo{
+   font-family: "calibri", Garamond, 'Comic Sans';
+   font-style: italic;
+   font-size: 25px;
+   color: #000000;
+   border-style: outset;
+   border-right: auto;
+}
+
+.subtitle{
+   text-decoration: underline;
+   font-family: "calibri";
+   font-size: 20px;
+   padding-bottom: 0px;
+
+}
+
+.basic{
+   font-family: "calibri";
+   color: rgb(0, 0, 0);
+   font-size: 15px;
+   font-weight: normal;
+   margin: inherit;
+   padding: auto;
+
+}
