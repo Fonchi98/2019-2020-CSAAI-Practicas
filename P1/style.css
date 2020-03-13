@@ -4,51 +4,83 @@
 }
 
 body {
-   background-image: linear-gradient(to right, rgb(184, 184, 184), rgba(55, 55, 55, 0.85));
+   background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 217, 255, 0.85));
    background-size: cover;
 }
 
-.titulo{
-   text-shadow: 0 0 5px rgb(221, 58, 97);
+header{
+   font-size:50px;
+   text-shadow: 0 0 10px rgb(255, 0, 61);
+   text-align: center;
    width: 500px;
    padding: auto;
    padding-bottom: 25px;
    margin: auto;
-
    color: rgb(0,0,0);
 }
 
-.leftcolumn {
-   border-radius: 50px;
-   border: 2px solid #73AD21;
-   padding: 20px;
-   width: 400px;
-   height: auto;
+
+leftcolumn{
+   float: left;
+   width: 25%;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   outline-style: solid;
+   outline-color: rgb(131, 200, 89);
+   outline-offset: -8px;
 
 }
-.personalinfo{
-   font-family: "calibri", Garamond, 'Comic Sans';
-   font-style: italic;
-   font-size: 25px;
-   color: #000000;
-   border-style: outset;
-   border-right: auto;
+
+rightcolumn{
+   float: left;
+   width: 75%;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   outline-style: solid;
+   outline-color: rgb(0, 79, 255);
+   outline-offset: -8px;
 }
 
-.subtitle{
+
+h1 {
+   text-align: left;
    text-decoration: underline;
-   font-family: "calibri";
+   font-size: 30px;
+}
+
+h2 {
+   text-align: left;
+   text-decoration: underline;
    font-size: 20px;
-   padding-bottom: 0px;
 
 }
 
-.basic{
-   font-family: "calibri";
-   color: rgb(0, 0, 0);
-   font-size: 15px;
-   font-weight: normal;
-   margin: inherit;
+h3 {
+   font-family: Arial;
+   font-size: 20px;
+   border: 2px solid rgb(33, 62, 164);
+   height: auto;
    padding: auto;
 
+
+}
+
+#circles{
+   list-style-type: circle;
+}
+
+#imagestyle{
+   border-radius: 8px;
+   filter: drop-shadow(5px 5px 5px green);
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#imagestyle2{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
