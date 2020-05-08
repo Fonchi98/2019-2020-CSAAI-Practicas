@@ -1,0 +1,17 @@
+
+/* Fondo de la página */
+body {
+  background-color: midnightblue;
+}
+
+canvas {
+   background-color: black;
+   margin-left: 405px;
+   margin-top: 10px;
+}
+
+#instructions{
+   text-align: center;
+   font-family: Helvetica;
+	color: white;
+}
