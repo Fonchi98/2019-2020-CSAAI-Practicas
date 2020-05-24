@@ -13,14 +13,14 @@ function main() {
    var deslizadorA = document.getElementById('deslizadorA');
    var range_valueA = document.getElementById('range_valueA');
 
-   //Botones
+   //Botonoes
    var grises = document.getElementById('grises');
    var colores = document.getElementById('colores');
    var negativo = document.getElementById('negativo');
 
 
    var color = true;
-   var negative = false;
+   var negativo_boolean = false;
 
    var img = document.getElementById('imagesrc')
    var canvas = document.getElementById('display');
@@ -107,18 +107,18 @@ function main() {
 
   function filtrado(){
     //RGB y sin negativo
-    if(color && !negative){
+    if(color && !negativo_boolean){
       rgb()
     //RGB y negativo
-    }else if(color && negative){
+    }else if(color && negativo_boolean){
       rgb()
       negative()
     //Grises y sin negativo
-    }else if(!color && !negative){
+    }else if(!color && !negativo_boolean){
       rgb()
       grey()
     //Grises y con negativo
-    }else if(!color && negative){
+    }else if(!color && negativo_boolean){
       rgb()
       grey()
       negative()
@@ -140,13 +140,13 @@ function main() {
   }
   deslizadorA.oninput = () => {
      filtrado()
-     ctx.putImageData(imgData, 0, 0);
+     ctx.putImageData(imgData, 0,0)
  }
 
   colores.onclick = () =>{
      color = true;
      rgb()
-     if (negative){
+     if (negativo_boolean){
         negative()
      }
      ctx.putImageData(imgData, 0, 0);
@@ -160,10 +160,10 @@ function main() {
   }
 
   negativo.onclick = () =>{
-     if (negative){
-        negative = false;
+     if (negativo_boolean){
+        negativo_boolean = false;
      }else{
-        negative = true;
+        negativo_boolean = true;
     }
     negative()
     ctx.putImageData(imgData, 0, 0);
